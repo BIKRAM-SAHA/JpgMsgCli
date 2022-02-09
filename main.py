@@ -36,7 +36,5 @@ else:
         else:
             print("err: bad argument!")
         img.close()
-    except IOError as e:
-        print(f"err:{e.strerror}")
     except Exception as e:
-        print(e)
+        print("unexpected error occurred!")
