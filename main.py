@@ -35,6 +35,7 @@ else:
             img.truncate(offset+len(endSequence)+len(byteMsg))
         else:
             print("err: bad argument!")
-        img.close()
     except Exception as e:
         print("unexpected error occurred!")
+    finally:
+        img.close()
