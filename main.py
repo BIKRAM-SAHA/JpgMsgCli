@@ -12,7 +12,6 @@ elif(not(path.endswith('.jpg'))):
 else:
     try:
         img=open(path,'rb+')
-        img.seek(0)
         byteVal=img.read()
         endSequence=b'\xff\xd9' #for png: 49 45 4e 44 ae 42 60 82
         if (choice=='1'):
